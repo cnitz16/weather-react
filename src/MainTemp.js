@@ -6,8 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function MainTemp() {
   return (
     <div className="col-5">
-      <span className="main-temp">
-        79
+      <span className="mainTemp">
+        35
         <span className="units">
           <a href="/">°F</a> | <a href="/">°C</a>
         </span>
