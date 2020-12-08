@@ -6,12 +6,12 @@ export default function Form() {
     <form id="discover-search" className="form-inline">
       <input
         type="search"
-        class="form-control"
+        className="form-control"
         placeholder="Type in city..."
         id="search-city"
-        autocomplete="off"
+        autoComplete="off"
       />
-      <input type="submit" class="btn btn-dark" value="Discover" />
+      <input type="submit" className="btn btn-dark" value="Discover" />
     </form>
   );
 }
