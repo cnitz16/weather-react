@@ -1,6 +1,7 @@
 import React from "react";
 import "./MainTemp.css";
 import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function MainTemp() {
   function handleResponse(response) {

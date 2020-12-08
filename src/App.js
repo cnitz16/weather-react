@@ -10,7 +10,7 @@ import City from "./City";
 import Quote from "./Quote";
 import Source from "./Source";
 import CurrentDateAndCondition from "./CurrentDateAndCondition";
-import bootstrap from "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   return (
