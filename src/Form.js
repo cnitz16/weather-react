@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Form() {
   return (
-    <form id="discover-search" className="form-inline">
+    <form id="discover-search" className="form-inline d-flex">
       <input
         type="search"
         className="form-control"
