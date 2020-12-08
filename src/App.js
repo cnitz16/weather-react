@@ -1,25 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Form from "./Form";
+import Realfeel from "./Realfeel";
+import Humidity from "./Humidity";
+import Wind from "./Wind";
+import Pressure from "./Pressure";
+import MainTemp from "./MainTemp";
+import City from "./City";
+import Quote from "./Quote";
+import Source from "./Source";
+import CurrentDateAndCondition from "./CurrentDateAndCondition";
+import bootstrap from "bootstrap";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="row">
+        <div class="col-7">
+          <Form />
+        </div>
+        <div className="col-5">
+          <Quote />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-4">
+          <City />
+          <CurrentDateAndCondition />
+          <br />
+        </div>
+        <div className="col-3">
+          <img src="images/cloudy.svg" alt="cloudy" width="150px" id="icon" />
+        </div>
+        <div className="col-5">
+          <MainTemp />
+        </div>
+      </div>
+      <br />
+      <div className="row">
+        <div className="col-3">
+          <Realfeel />
+        </div>
+        <div className="col-3">
+          <Humidity />
+        </div>
+        <div className="col-3">
+          <Wind />
+        </div>
+        <div className="col-3">
+          <Pressure />
+        </div>
+      </div>
+      <br />
+      <Source />
     </div>
   );
 }
-
-export default App;
