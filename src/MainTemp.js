@@ -12,9 +12,9 @@ export default function MainTemp() {
   axios.get(apiUrl).then(handleResponse);
 
   return (
-    <div class="col-5">
-      <span class="main-temp">
-        <span class="units">
+    <div className="col-5">
+      <span className="main-temp">
+        <span className="units">
           <a href="/">°F</a> | <a href="/">°C</a>
         </span>
       </span>

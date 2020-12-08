@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className="container">
       <div className="row">
-        <div class="col-7">
+        <div className="col-7">
           <Form />
         </div>
         <div className="col-5">
