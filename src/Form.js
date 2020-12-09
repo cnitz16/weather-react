@@ -5,7 +5,7 @@ export default function Form() {
   return (
     <form id="discover-search" className="form-inline d-flex">
       <div className="row">
-        <div className="col-9">
+        <div className="col-11">
           <input
             type="search"
             className="form-control"
@@ -14,8 +14,12 @@ export default function Form() {
             autoComplete="off"
           />
         </div>
-        <div className="col-3">
-          <input type="submit" className="btn btn-dark" value="Discover" />
+        <div className="col-1">
+          <input
+            type="submit"
+            className="btn btn-dark w-350"
+            value="Discover"
+          />
         </div>
       </div>
     </form>
