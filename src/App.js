@@ -14,45 +14,47 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-6">
-          <Form />
+    <div className="App">
+      <div className="container">
+        <div className="row">
+          <div className="col-6">
+            <Form />
+          </div>
+          <div className="col-6">
+            <Quote />
+          </div>
         </div>
-        <div className="col-6">
-          <Quote />
+        <div className="row">
+          <div className="col-4">
+            <City />
+            <CurrentDateAndCondition />
+            <br />
+          </div>
+          <div className="col-3">
+            <img src="images/cloudy.svg" alt="cloudy" width="150px" id="icon" />
+          </div>
+          <div className="col-5">
+            <MainTemp />
+          </div>
         </div>
+        <br />
+        <div className="row">
+          <div className="col-3">
+            <Realfeel />
+          </div>
+          <div className="col-3">
+            <Humidity />
+          </div>
+          <div className="col-3">
+            <Wind />
+          </div>
+          <div className="col-3">
+            <Pressure />
+          </div>
+        </div>
+        <br />
+        <Source />
       </div>
-      <div className="row">
-        <div className="col-4">
-          <City />
-          <CurrentDateAndCondition />
-          <br />
-        </div>
-        <div className="col-3">
-          <img src="images/cloudy.svg" alt="cloudy" width="150px" id="icon" />
-        </div>
-        <div className="col-5">
-          <MainTemp />
-        </div>
-      </div>
-      <br />
-      <div className="row">
-        <div className="col-3">
-          <Realfeel />
-        </div>
-        <div className="col-3">
-          <Humidity />
-        </div>
-        <div className="col-3">
-          <Wind />
-        </div>
-        <div className="col-3">
-          <Pressure />
-        </div>
-      </div>
-      <br />
-      <Source />
     </div>
   );
 }

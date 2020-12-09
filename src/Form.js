@@ -15,11 +15,7 @@ export default function Form() {
           />
         </div>
         <div className="col-1">
-          <input
-            type="submit"
-            className="btn btn-dark w-350"
-            value="Discover"
-          />
+          <input type="submit" className="btn btn-dark" value="Discover" />
         </div>
       </div>
     </form>
