@@ -1,11 +1,8 @@
 import React from "react";
 import "./App.css";
 import Form from "./Form";
-import RealFeel from "./RealFeel";
-import Humidity from "./Humidity";
-import Wind from "./Wind";
-import Pressure from "./Pressure";
 import MainTemp from "./MainTemp";
+import Conditions from "./Conditions";
 import City from "./City";
 import Quote from "./Quote";
 import Source from "./Source";
@@ -36,20 +33,8 @@ export default function App() {
           <div className="col-5">
             <MainTemp />
           </div>
-        </div>
-        <br />
-        <div className="row">
-          <div className="col-3">
-            <RealFeel />
-          </div>
-          <div className="col-3">
-            <Humidity />
-          </div>
-          <div className="col-3">
-            <Wind />
-          </div>
-          <div className="col-3">
-            <Pressure />
+          <div className="row">
+            <Conditions />
           </div>
         </div>
         <br />
