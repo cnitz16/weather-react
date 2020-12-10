@@ -25,7 +25,7 @@ export default function Conditions() {
               </div>
               <div className="col-4">
                 <p className="card-text">
-                  <span id="realFeel">{conditions.feeling}</span>°
+                  <span id="realFeel">{Math.round(conditions.feeling)}</span>°
                 </p>
               </div>
             </div>
