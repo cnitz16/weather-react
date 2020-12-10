@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Form from "./Form";
-import Realfeel from "./Realfeel";
+import Realfeel from "./RealFeel";
 import Humidity from "./Humidity";
 import Wind from "./Wind";
 import Pressure from "./Pressure";
@@ -40,7 +40,7 @@ export default function App() {
         <br />
         <div className="row">
           <div className="col-3">
-            <Realfeel />
+            <RealFeel />
           </div>
           <div className="col-3">
             <Humidity />
