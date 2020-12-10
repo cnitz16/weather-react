@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Form from "./Form";
-import Realfeel from "./RealFeel";
+import RealFeel from "./RealFeel";
 import Humidity from "./Humidity";
 import Wind from "./Wind";
 import Pressure from "./Pressure";

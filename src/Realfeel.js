@@ -21,7 +21,7 @@ export default function RealFeel() {
           </div>
           <div className="col-4">
             <p className="card-text">
-              <span id="realFeel">{realFeel.reelFeel}</span>°
+              <span id="realFeel">{realFeel.realFeel}</span>°
             </p>
           </div>
         </div>
