@@ -55,7 +55,7 @@ export default function Conditions() {
               </div>
               <div className="col-4">
                 <p className="card-text">
-                  <span id="windSpeed">{conditions.wind}</span>mph
+                  <span id="windSpeed">{Math.round(conditions.wind)}</span>mph
                 </p>
               </div>
             </div>
