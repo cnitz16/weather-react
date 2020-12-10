@@ -33,9 +33,7 @@ export default function App() {
           <div className="col-5">
             <MainTemp />
           </div>
-          <div className="row">
-            <Conditions />
-          </div>
+          <Conditions />
         </div>
         <br />
         <Source />
