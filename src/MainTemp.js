@@ -10,6 +10,8 @@ export default function MainTemp() {
     setMainTemperature({
       ready: true,
       temperature: response.data.main.temp,
+      date: new Date(response.data.dt * 1000),
+      description: response.data.weather[0].description,
     });
   }
   if (mainTemp.ready) {
