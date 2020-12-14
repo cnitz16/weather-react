@@ -28,3 +28,8 @@ ul {
   padding: 0;
   text-transform: capitalize;
 }
+
+canvas {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
