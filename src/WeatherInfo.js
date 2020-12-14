@@ -2,6 +2,7 @@ import React from "react";
 import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CurrentDate from "./CurrentDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -18,7 +19,7 @@ export default function WeatherInfo(props) {
           <br />
         </div>
         <div className="col-3">
-          <img src={props.info.iconUrl} alt="cloudy" width="150px" id="icon" />
+          <WeatherIcon code={props.info.icon} />
         </div>
         <div className="col-5">
           <span className="mainTemp">
