@@ -18,7 +18,7 @@ export default function WeatherInfo(props) {
           <br />
         </div>
         <div className="col-3">
-          <img src="images/cloudy.svg" alt="cloudy" width="150px" id="icon" />
+          <img src={props.info.iconUrl} alt="cloudy" width="150px" id="icon" />
         </div>
         <div className="col-5">
           <span className="mainTemp">

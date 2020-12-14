@@ -19,12 +19,12 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       pressure: response.data.main.pressure,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
   function search() {
     let apiKey = `62195a01c77939981afa2a73aa7e3da1`;
-    let city = "New York";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
     axios.get(apiUrl).then(handleResponse);
