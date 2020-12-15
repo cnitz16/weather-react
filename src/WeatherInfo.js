@@ -3,6 +3,16 @@ import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faSun,
+  faTint,
+  faWind,
+  faCloudSunRain,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(faSun, faTint, faWind, faCloudSunRain);
 
 export default function WeatherInfo(props) {
   return (
@@ -36,7 +46,7 @@ export default function WeatherInfo(props) {
             <h5 className="realFeel">Real Feel</h5>
             <div className="row">
               <div className="col-4">
-                <i className="fas fa-sun" />
+                <FontAwesomeIcon icon={faSun} />
               </div>
               <div className="col-4">
                 <p className="card-text">
@@ -51,7 +61,7 @@ export default function WeatherInfo(props) {
             <h5 className="current-humidity">Humidity</h5>
             <div className="row">
               <div className="col-4">
-                <i className="fas fa-tint"></i>
+                <FontAwesomeIcon icon={faTint} />
               </div>
               <div className="col-4">
                 <p className="card-text">
@@ -66,7 +76,7 @@ export default function WeatherInfo(props) {
             <h5 className="wind-speed">Wind</h5>
             <div className="row">
               <div className="col-4">
-                <i className="fas fa-wind"></i>
+                <FontAwesomeIcon icon={faWind} />
               </div>
               <div className="col-4">
                 <p className="card-text">
@@ -81,7 +91,7 @@ export default function WeatherInfo(props) {
             <h5 className="current-pressure">Pressure</h5>
             <div className="row">
               <div className="col-4">
-                <i className="fas fa-cloud-sun-rain"></i>
+                <FontAwesomeIcon icon={faCloudSunRain} />
               </div>
               <div className="col-4">
                 <p className="card-text">
