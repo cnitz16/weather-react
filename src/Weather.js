@@ -75,7 +75,7 @@ export default function Weather(props) {
             </h5>
           </div>
         </div>
-        <WeatherInfo info={mainTemp} />
+        <WeatherInfo data={mainTemp} />
         <br />
         <WeatherForecast city={mainTemp.city} />
       </div>

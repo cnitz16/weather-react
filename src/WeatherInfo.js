@@ -20,19 +20,19 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo">
       <div className="row">
         <div className="col-4">
-          <h1>{props.info.city}</h1>
+          <h1>{props.data.city}</h1>
           <ul>
             <li>
-              <CurrentDate date={props.info.date} />
+              <CurrentDate date={props.data.date} />
             </li>
-            <li className="text-capitalize">{props.info.description}</li>
+            <li className="text-capitalize">{props.data.description}</li>
           </ul>
           <br />
         </div>
         <div className="col-3">
-          <WeatherIcon code={props.info.icon} />
+          <WeatherIcon code={props.data.icon} />
         </div>
-        <WeatherConversion fahrenheit={props.info.temperature} />
+        <WeatherConversion fahrenheit={props.data.temperature} />
       </div>
       <div className="row">
         <div className="col-3">
@@ -44,7 +44,7 @@ export default function WeatherInfo(props) {
               </div>
               <div className="col-4">
                 <p className="card-text">
-                  <span>{Math.round(props.info.feeling)}</span>°
+                  <span>{Math.round(props.data.feeling)}</span>°
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function WeatherInfo(props) {
               </div>
               <div className="col-4">
                 <p className="card-text">
-                  <span>{props.info.humidity}</span>%
+                  <span>{props.data.humidity}</span>%
                 </p>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function WeatherInfo(props) {
               </div>
               <div className="col-4">
                 <p className="card-text">
-                  <span>{Math.round(props.info.wind)}</span>mph
+                  <span>{Math.round(props.data.wind)}</span>mph
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function WeatherInfo(props) {
               </div>
               <div className="col-4">
                 <p className="card-text">
-                  <span>{props.info.pressure}</span>hPa
+                  <span>{props.data.pressure}</span>hPa
                 </p>
               </div>
             </div>
