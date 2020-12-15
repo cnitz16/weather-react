@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import "./WeatherForecast.css";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import WeatherForecastPreview from "./WeatherForecastPreview";
@@ -15,18 +14,18 @@ export default function WeatherForecast(props) {
 
   if (loaded && props.city === forecast.city.name) {
     return (
-      <div class="row">
+      <div className="row">
         <WeatherForecastPreview data={forecast.list[0]} />
-        <div class="col">
+        <div className="col">
           <WeatherForecastPreview data={forecast.list[1]} />
         </div>
-        <div class="col">
+        <div className="col">
           <WeatherForecastPreview data={forecast.list[2]} />
         </div>
-        <div class="col">
+        <div className="col">
           <WeatherForecastPreview props={forecast.list[3]} />
         </div>
-        <div class="col">
+        <div className="col">
           <WeatherForecastPreview props={forecast.list[4]} />
         </div>
       </div>

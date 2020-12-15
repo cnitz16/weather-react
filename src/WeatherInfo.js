@@ -44,7 +44,7 @@ export default function WeatherInfo(props) {
               </div>
               <div className="col-4">
                 <p className="card-text">
-                  <span id="realFeel">{Math.round(props.info.feeling)}</span>°
+                  <span>{Math.round(props.info.feeling)}</span>°
                 </p>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function WeatherInfo(props) {
               </div>
               <div className="col-4">
                 <p className="card-text">
-                  <span id="windSpeed">{Math.round(props.info.wind)}</span>mph
+                  <span>{Math.round(props.info.wind)}</span>mph
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function WeatherInfo(props) {
               </div>
               <div className="col-4">
                 <p className="card-text">
-                  <span id="pressureLevel">{props.info.pressure}</span>hPa
+                  <span>{props.info.pressure}</span>hPa
                 </p>
               </div>
             </div>
