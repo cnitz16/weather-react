@@ -1,5 +1,6 @@
 import React from "react";
 import "./Weather.css";
+import WeatherConversion from "./WeatherConversion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
@@ -31,14 +32,7 @@ export default function WeatherInfo(props) {
         <div className="col-3">
           <WeatherIcon code={props.info.icon} />
         </div>
-        <div className="col-5">
-          <span className="mainTemp">
-            {Math.round(props.info.temperature)}
-            <span className="units">
-              <a href="/">°F</a> | <a href="/">°C</a>
-            </span>
-          </span>
-        </div>
+        <WeatherConversion fahrenheit={props.info.temperature} />
       </div>
       <div className="row">
         <div className="col-3">
