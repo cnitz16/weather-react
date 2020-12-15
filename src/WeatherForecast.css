@@ -8,4 +8,14 @@
   padding-left: 5px;
   padding-right: 5px;
   margin: 5px 5px 10px 5px;
+  width: 70px;
+  height: 60px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
 }
