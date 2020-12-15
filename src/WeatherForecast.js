@@ -13,23 +13,21 @@ export default function WeatherForecast(props) {
     setLoaded(true);
   }
 
-  if (loaded) {
+  if (loaded && props.city === forecast.city.name) {
     return (
-      <div class="weekly">
-        <div class="row">
-          <WeatherForecastPreview data={forecast.list[0]} />
-          <div class="col">
-            <WeatherForecastPreview data={forecast.list[1]} />
-          </div>
-          <div class="col">
-            <WeatherForecastPreview data={forecast.list[2]} />
-          </div>
-          <div class="col">
-            <WeatherForecastPreview props={forecast.list[3]} />
-          </div>
-          <div class="col">
-            <WeatherForecastPreview props={forecast.list[4]} />
-          </div>
+      <div class="row">
+        <WeatherForecastPreview data={forecast.list[0]} />
+        <div class="col">
+          <WeatherForecastPreview data={forecast.list[1]} />
+        </div>
+        <div class="col">
+          <WeatherForecastPreview data={forecast.list[2]} />
+        </div>
+        <div class="col">
+          <WeatherForecastPreview props={forecast.list[3]} />
+        </div>
+        <div class="col">
+          <WeatherForecastPreview props={forecast.list[4]} />
         </div>
       </div>
     );
@@ -37,5 +35,7 @@ export default function WeatherForecast(props) {
     let apiKey = `62195a01c77939981afa2a73aa7e3da1`;
     let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleForecastResponse);
+
+    return null;
   }
 }
