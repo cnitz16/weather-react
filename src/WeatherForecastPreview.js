@@ -3,21 +3,17 @@ import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecast.css";
 
 export default function WeatherForecastPreview(props) {
-  function hours() {
-    let date = new Date(props.data.dt * 1000);
-    let hours = date.getHours();
-    return `${hours}:00`;
-  }
-  function temperature() {
-    let temperature = Math.round(props.data.main.temp);
-
-    return `${temperature}°F`;
-  }
   return (
     <div className="col">
-      <h6>{hours()}</h6>
-      <WeatherIcon code={props.data.weather[0].icon} />
-      <h4>{temperature()}</h4>
+      <h6>
+        {props.date.toLocaleString("en-US", {
+          hour: "numeric",
+          minute: "numeric",
+          hour12: true,
+        })}
+      </h6>
+      <WeatherIcon code={props.data.weather[0].icon} width={70} height={60} />
+      <h4>{Math.round(props.data.main.temp)}°</h4>
     </div>
   );
 }

@@ -11,17 +11,22 @@ export default function CurrentDate(props) {
     "Saturday",
   ];
   let day = days[props.date.getDay()];
-  let hours = props.date.getHours();
-  if (hours > 12) {
-    hours = `(${hours} - 12)`;
-  }
-  let minutes = props.date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
+  // let hours = props.date.getHours();
+  // if (hours > 12) {
+  //   hours = `(${hours} - 12)`;
+  // }
+  // let minutes = props.date.getMinutes();
+  // if (minutes < 10) {
+  //   minutes = `0${minutes}`;
+  // }
+  let time = props.date.toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  });
   return (
     <div>
-      {day} {hours}:{minutes}
+      {day} {time}
     </div>
   );
 }
