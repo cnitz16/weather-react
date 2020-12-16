@@ -9,11 +9,12 @@
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 70px;
   margin-bottom: 0;
   margin-top: 10px;
   text-transform: capitalize;
   font-weight: 1000px;
+  padding-right: 20px;
 }
 
 .quote {
