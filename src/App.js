@@ -12,10 +12,8 @@ export default function App() {
           <Weather defaultCity="Boston" />
         </div>
         <br />
-        <div>
-          <Source />
-        </div>
       </div>
+      <Source />
     </div>
   );
 }
