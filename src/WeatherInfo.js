@@ -3,7 +3,8 @@ import "./Weather.css";
 import WeatherConversion from "./WeatherConversion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CurrentDate from "./CurrentDate";
-import WeatherIcon from "./WeatherIcon";
+// import WeatherIcon from "./WeatherIcon";
+import WeatherImages from "./WeatherImages";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -30,7 +31,7 @@ export default function WeatherInfo(props) {
           <br />
         </div>
         <div className="col-3">
-          <WeatherIcon code={props.data.icon} />
+          <WeatherImages code={props.data.icon} alt={props.data.sky} />
         </div>
         <WeatherConversion fahrenheit={props.data.temperature} />
       </div>
