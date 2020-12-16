@@ -10,7 +10,12 @@
   margin: 5px 5px 10px 5px;
   /* width: 70px;
   height: 60px; */
-  background-size: 20px 30px;
+}
+
+.WeatherImages {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 h6 {

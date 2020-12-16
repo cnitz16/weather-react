@@ -1,6 +1,6 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecast.css";
+import WeatherImages from "./WeatherImages";
 
 export default function WeatherForecastPreview(props) {
   function hours() {
@@ -9,13 +9,6 @@ export default function WeatherForecastPreview(props) {
     let suffix = hour >= 12 ? ":00 PM" : ":00 AM";
     let hours = ((hour + 11) % 12) + 1 + suffix;
     return `${hours}`;
-
-    // if (hours > 12) {
-    //   hours = hours - 12;
-    //   return `${hours}:00 PM`;
-    // } else {
-    //   return `${hours}:00 AM`;
-    // }
   }
   function temperature() {
     let temperature = Math.round(props.data.main.temp);
@@ -25,7 +18,7 @@ export default function WeatherForecastPreview(props) {
   return (
     <div className="col">
       <h6>{hours()}</h6>
-      <WeatherIcon code={props.data.weather[0].icon} width={70} height={60} />
+      <WeatherImages code={props.data.icon} alt={props.data.sky} />
       <h4>{temperature()}</h4>
     </div>
   );
